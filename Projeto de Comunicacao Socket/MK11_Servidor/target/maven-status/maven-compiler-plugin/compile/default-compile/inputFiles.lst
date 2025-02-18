@@ -1,0 +1,13 @@
+C:\Users\MATHEUS.SAMPAIO\Documents\GitHub\SistemasDistribuidos02\MK11_Servidor\src\main\java\center\mk11_servidor\MK11_Servidor.java
+C:\Users\MATHEUS.SAMPAIO\Documents\GitHub\SistemasDistribuidos02\MK11_Servidor\src\main\java\entities\Aviso.java
+C:\Users\MATHEUS.SAMPAIO\Documents\GitHub\SistemasDistribuidos02\MK11_Servidor\src\main\java\entities\Categoria.java
+C:\Users\MATHEUS.SAMPAIO\Documents\GitHub\SistemasDistribuidos02\MK11_Servidor\src\main\java\entities\Informacoes.java
+C:\Users\MATHEUS.SAMPAIO\Documents\GitHub\SistemasDistribuidos02\MK11_Servidor\src\main\java\entities\Usuario.java
+C:\Users\MATHEUS.SAMPAIO\Documents\GitHub\SistemasDistribuidos02\MK11_Servidor\src\main\java\entities\Vinculo.java
+C:\Users\MATHEUS.SAMPAIO\Documents\GitHub\SistemasDistribuidos02\MK11_Servidor\src\main\java\json\AvisoJSON.java
+C:\Users\MATHEUS.SAMPAIO\Documents\GitHub\SistemasDistribuidos02\MK11_Servidor\src\main\java\json\CategoriaJSON.java
+C:\Users\MATHEUS.SAMPAIO\Documents\GitHub\SistemasDistribuidos02\MK11_Servidor\src\main\java\json\UsuarioJSON.java
+C:\Users\MATHEUS.SAMPAIO\Documents\GitHub\SistemasDistribuidos02\MK11_Servidor\src\main\java\json\VinculoJSON.java
+C:\Users\MATHEUS.SAMPAIO\Documents\GitHub\SistemasDistribuidos02\MK11_Servidor\src\main\java\service\AcoesTratamento.java
+C:\Users\MATHEUS.SAMPAIO\Documents\GitHub\SistemasDistribuidos02\MK11_Servidor\src\main\java\service\ClienteHandler.java
+C:\Users\MATHEUS.SAMPAIO\Documents\GitHub\SistemasDistribuidos02\MK11_Servidor\src\main\java\service\Servidor.java
