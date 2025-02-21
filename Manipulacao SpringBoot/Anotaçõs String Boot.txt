@@ -1,0 +1,29 @@
+String boot
+*POST
+-  A aplicação de string boot acontece inicialemnte com um metodo controller, onde nele deve ser aplicacos alguns parametros do string boot
+-  É usado uma classe record para poder capturar as informações recebidas pelo json
+-  São usados Repository para poder fazer a manipulação no banco de dados, nessa interface é necessario inserir a classe e o tipo da primary key que 
+   serão manipulados no banco
+-  São criados versões para a manipulação da estrutura do banco de dados, de forma que, teoricamente, não tem necessidade de acessar o BD para fazer
+   essas alterações. Para isso é feito um controle de versão usando nos resources um db.migration datado com a versão da alteração e procedimento que 	
+   ela realiza.
+
+*PARAMETROS DE DECLARAÇÃO
+	@RestController: Indica que a classe é um controller
+	@RequestMapping: Indica ca URL do campo que usa esse request da api
+	@Autowired: Recompila o preojeto sempre que a uma alteração nele
+	@PostMapping: Para poder enviar o mapping desta classe para a aplicação
+	@Transaction: Iniciação de uma transação 
+	@RequestBody: Coleta as informações do corpo da requisição 
+	@Valid: Valida as informações com o Bean Validation
+	@NotBlank: Validação se o campo não é null e é valido como string
+	@Email: Valida se o campo está no formato de um email
+	@Pattern: Valida o recebimento da String de forma personalizada Ex.(@Pattern{regexp = "\\d{4,6}"}) "Aceita apenas numeros e que a sequencia seja de 4 a 6 numeros"
+	@Table: Informa a qual tabela a entidade está se referenciando Ex.(@Table(name = "medicos"))
+	@Entity: Informa com a entidade é referenciada para a transformação das informações do banco para a classe Ex.(@Entity(name="Medico"))
+	@Getters/@Setters: 
+	@NoArgsConstructor: Cria um metodo constutor null em tempo de execussão, sem precissar cirar o propio no codigo
+	@AllArgsConstructor:Cria um metodo constutor com todos os parametros em tempo de execussão, sem precissar cirar o propio no codigo
+	@EqualsAndHashCode: Cria metodos equals e Hashcode das entidades da classe para comparação e armazenamento no banco Ex.(@EqualsAndHashCode(of = "id")) "Cria os metodos equals e hashcode apenas do parametro id"
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY): Gera automaticamente um ID para o a classe uando ela for salva no BD
+	@Enumerated(EnumType.STRING): Faz com que o valor recebido em String seja tratado e aplicado para uma classe Enum
