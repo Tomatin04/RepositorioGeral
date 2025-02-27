@@ -27,3 +27,9 @@ String boot
 	@EqualsAndHashCode: Cria metodos equals e Hashcode das entidades da classe para comparação e armazenamento no banco Ex.(@EqualsAndHashCode(of = "id")) "Cria os metodos equals e hashcode apenas do parametro id"
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY): Gera automaticamente um ID para o a classe uando ela for salva no BD
 	@Enumerated(EnumType.STRING): Faz com que o valor recebido em String seja tratado e aplicado para uma classe Enum
+	@Embedded: Faz com que a classe se referencia a outro objeto, como por exemplo, endereço 
+	@Embeddable: Faz com que a classe seja acessivel para ser utilizada como se fosse parte do objeto que ela está relacionada
+
+
+*ANOTAÇÃO
+-  Diferença do uso de DTO para JPA na trasferencia de dados é a filtragem da informação que está sendo trasmitida 
