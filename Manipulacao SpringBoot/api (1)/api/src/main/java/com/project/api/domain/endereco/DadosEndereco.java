@@ -1,7 +1,6 @@
-package com.project.api.endereco;
+package com.project.api.domain.endereco;
 
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 
 public record DadosEndereco(

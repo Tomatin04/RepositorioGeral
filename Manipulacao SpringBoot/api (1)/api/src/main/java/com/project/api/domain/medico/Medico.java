@@ -1,8 +1,7 @@
-package com.project.api.medico;
+package com.project.api.domain.medico;
 
-import com.project.api.endereco.Endereco;
+import com.project.api.domain.endereco.Endereco;
 import jakarta.persistence.*;
-import jdk.jfr.Enabled;
 import lombok.*;
 
 @Table(name = "medicos")

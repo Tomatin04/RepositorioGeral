@@ -1,11 +1,9 @@
-package com.project.api.endereco;
+package com.project.api.domain.endereco;
 
 //import jakarta.persistence.*;
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 
 @Getter
