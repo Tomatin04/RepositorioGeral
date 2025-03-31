@@ -33,3 +33,4 @@ String boot
 
 *ANOTAÇÃO
 -  Diferença do uso de DTO para JPA na trasferencia de dados é a filtragem da informação que está sendo trasmitida 
+-  
