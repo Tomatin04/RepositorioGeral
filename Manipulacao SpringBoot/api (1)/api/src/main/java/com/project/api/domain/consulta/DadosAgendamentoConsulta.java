@@ -20,4 +20,5 @@ public record DadosAgendamentoConsulta(
 
         Especialidades especialidade
 ) {
+
 }
