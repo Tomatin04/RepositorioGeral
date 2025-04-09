@@ -1,6 +1,7 @@
 package com.project.api.controller;
 
 import com.project.api.domain.paciente.*;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
+@SecurityRequirement(name = "bearer-key")
 @RestController
 @RequestMapping("/pacientes")
 public class PacienteController {
