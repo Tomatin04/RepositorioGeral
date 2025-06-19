@@ -1,6 +1,7 @@
 package com.project.api.domain.usuario;
 
 
+import com.project.api.infra.securety.SecurityConfig;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
@@ -28,6 +29,11 @@ public class Usuario implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority("ROLE_USER"));
+    }
+
+    public Usuario(DadosCadastro dados) {
+        this.login = dados.login();
+        this.senha = SecurityConfig.passwordEncoder().encode(dados.senha());
     }
 
     @Override
